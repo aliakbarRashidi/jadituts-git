@@ -1,0 +1,27 @@
+# rsa encryption using a provate and public key through gpg app
+
+
+gpg --list-keys
+
+gpg --gen-key
+
+git config --global user.signingkey
+
+gpg --list-secret-keys --keyid-format LONG
+
+# config git to sign all commits with private key returned by above command
+git config --global user.signingkey 7h64gj533
+
+
+
+
+# usage
+# for example sign a tag and later verify who signed the tag
+git tag -s v2.1 -m 'first releade signed by me'
+# -s means to sign tag
+git tag -v v2.1
+# -v means to verify the sign of specific tag
+# if you have the public key of person who signed tag then result would be Good Signature by NameOfPersonSignedTag
+
+git commit -S -m 'first signed commit by me'
+

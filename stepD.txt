@@ -1,0 +1,17 @@
+# show difference between wd and HEAD ( head now is on last commit (but you can move the HEAD to another commit(place)))
+# State: i changed some files and i have not commit anything yet. i want to know difference between now and for example last final change(commited change)
+git diff HEAD
+
+
+# State: you add some file or all file to stage and want to know what difference has taken in staged files relative to last commit
+git diff --staged
+
+# State: if you have add file to stage and later you found out that you want to back the file in stage to working directory
+git reset page3.html
+
+# State: if you changed some files and not add to stage and you want to discard all changes and back to last final changes(last commit)
+# -- in below command means current commit that HEAD referes to 
+git checkout -- page2.html
+
+
+

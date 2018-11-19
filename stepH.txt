@@ -1,0 +1,41 @@
+# if you have a local repo and yet not pushed to any remote repo
+# you must first create repo on remote 
+# then add remote repo to local repo's remote list
+git remote add origin https://github.com/git-test
+
+#to see know if remote was add successfully
+git remote -v
+
+
+# now you can push and pull 
+git push -u origin master
+
+# you can have more than one remote server
+# for example you can push local repo either to github and gitlab
+
+#-----------------------------------------------
+
+# conflict
+# State: you and your coworker work on same project; your coworker change README.md at line 2 and pushed to master branch of remote repo successfully
+# then you change README.md at line 2 by your own and want to push to master branch of remote repo
+git push origin master
+#you give an error say you `! [rejected] (fetch first)` because of conflict change in same file by 2 person(you and your coworker)
+# so type below command to fetch changes already taken on file we want to push and has conflict
+
+git pull
+# git try to auto merge if possible and line has no conlict
+# if git cannot auto merge then content of conflict files be both of changes either local and remote change that has conflict with each other
+# you must open that file with an editor and remove that change you dont want; and then save file and then commit
+vim README.md
+git commit -m 'message you want'
+
+git status
+# say that `your branch is ahead of origin/master by 2 commits`
+
+git push
+
+
+
+
+#-------------
+pull = fetch + merge

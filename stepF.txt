@@ -1,0 +1,10 @@
+git rm footer.html 
+
+# State: if you change working directory or add to stage some change and while changes not commited...
+# ...switch to another branch; all the changes go along with you to branch you go
+# to prevent it either commit before changing branch or add changes to stash(temporary place code can be held)
+
+
+# to delete a branch that you no longer need it 
+git branch -d fixpages
+

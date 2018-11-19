@@ -1,0 +1,25 @@
+# to clone a project from github
+git clone https://github.com/aliakbarRashidi/testgit
+
+
+# State: when you change a file in this project cloned from github and commit that change
+git status
+# say you 
+# `you are on Branch master`  and `your branch is ahead of 'origin/master' by 1 commit`
+# this means that your local master with remote master has 1 commit difference changes
+
+
+# to update remote branch with current local branch
+git push origin master
+# then type your username and password of github account and the work is finish
+# the origin means remote repo
+# the master means branch master of local repo
+# to prevent every time typing 'origin master' you can use -u after push
+
+
+# State: someone changed some file of remote git project to have remote repo on local repo
+# you must mix remote code to local code
+git pull origin master
+
+
+

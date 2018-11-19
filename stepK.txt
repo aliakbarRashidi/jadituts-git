@@ -1,0 +1,20 @@
+git help commit
+git help blame
+
+
+# to know who change specefic line of code in a file
+git blame filename -L 8
+git blame filename -L 8,10
+git blame filename 
+
+
+# debug a code that now has error(bad) and previously was good
+git bisect start
+git bisect bad
+git bisect good 34jd39303
+git bisect bad
+git bisect bad
+git bisect good
+# until step > 1 u must git bisect
+git bisect good
+

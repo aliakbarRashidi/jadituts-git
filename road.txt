@@ -1,0 +1,8 @@
+StepD   reset checkout stage unstage diff
+StepE   branch merge(mix codes)
+StepF   rm branch merge switch branch delete branch
+StepG   github clone push pull 
+StepH   conflict push pull
+StepI 	tag show
+StepJ 	verify commit using pgp cryptography - gpg app
+StepK 	blame bisect debug fix code

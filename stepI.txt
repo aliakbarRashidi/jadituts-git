@@ -1,0 +1,31 @@
+
+# instead of remembering branch u can use a version number( in git called tag)
+# to see all tags
+git tag
+
+
+git tag -a v2.0 -m 'first version with tag that has long time support'
+
+git tag
+
+git tag -a 1.8 commitHashComesHere -m 'first version with tag that has long time support'
+
+# show all tags start with `v`
+git tag -l 'v*'
+
+# to see all changes taken in specific commit
+git show commitHash
+
+
+# to see all changes taken in specific tag
+git show tagName
+
+# by default tags not pushed in remote repo. u must save it manually peeiodically.
+# to push all tags
+git push origin --tags
+
+# to push spexefic tag
+git push origin v1.8
+
+# you can ckeckout to specific tag
+git checkout v1.8

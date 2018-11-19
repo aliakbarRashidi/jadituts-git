@@ -1,0 +1,26 @@
+#default branch is master
+
+# show all branches and see current branch you are in(branch that has a * at begin of its name)
+git branch
+
+
+# create new branch
+git branch fixpages
+
+
+# switch to(go to) specific branch to edit code in that branch
+git checkout fixpages
+
+# change files that must be fix a bug for example
+# commit all changes
+
+# then go to branch master
+git checkout master
+
+# now i want to mix codes have been fixed in branch fixpages with current branch and have all changes mixed in current branch
+git merge fixpages
+
+# to check merge successful see that commit of branch fixpages added to master
+git log
+
+
